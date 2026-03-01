@@ -53,8 +53,8 @@ def fix_tab(code, message):
     except Exception as e:
         return "", f"⚠️ Error: {e}", ""
 
-with gr.Blocks(title="CodeSensei Pro — Adaptive Code Mentor") as demo:
-    gr.Markdown("# CodeSensei Pro — Adaptive Code Mentor")
+with gr.Blocks(title="Code Mentor — Adaptive Code Mentor") as demo:
+    gr.Markdown("# Code Mentor — Adaptive Code Mentor")
 
     with gr.Accordion("Quick Examples", open=False):
         gr.Examples(
@@ -107,8 +107,9 @@ with gr.Blocks(title="CodeSensei Pro — Adaptive Code Mentor") as demo:
         msg3 = gr.Textbox(label="Describe the bug (optional)")
         btn3 = gr.Button("Fix Code")
         fixed = gr.Code(label="Fixed code", language="python", lines=18)
-        diff = gr.Textbox(label="Unified diff", lines=18, show_copy_button=True)
+        diff = gr.Textbox(label="Unified diff", lines=18)
         raw = gr.Markdown(label="Model Rationale")
         btn3.click(fix_tab, [code3, msg3], [fixed, diff, raw])
 
-demo = demo
+    if __name__ == "__main__":
+        demo.launch()
