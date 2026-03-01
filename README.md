@@ -160,6 +160,6 @@ flowchart LR
 
 ## 👤 Author
 
-**Julisa Delfin** - MS Data Science, MS AI, DePaul University
+**Julisa Delfin** - MS Data Science, MS Artificial Intelligence, DePaul University
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/julisadelfin/)
