@@ -56,7 +56,7 @@ def fix_tab(code, message):
 with gr.Blocks(title="CodeMentor — Adaptive Coding Mentor") as demo:
     gr.Markdown("# CodeMentor — Adaptive Coding Mentor")
 
-    with gr.Accordion("Quick Examples", open=True):
+    with gr.Accordion("Quick Examples", open=False):
         gr.Examples(
             examples=[
                 [
