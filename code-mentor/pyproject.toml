@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-mentor"
+version = "0.1.0"
+description = "Emotion- and skill-adaptive code mentor (Gradio) with evaluation hooks."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Julisa Delfin"}]
+dependencies = [
+  "transformers>=4.41",
+  "datasets>=2.18.0",
+  "accelerate>=0.31.0",
+  "evaluate>=0.4.1",
+  "gradio>=4.0.0",
+  "torch>=2.2.0",
+  "scikit-learn>=1.2.0",
+  "ruff>=0.4.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
